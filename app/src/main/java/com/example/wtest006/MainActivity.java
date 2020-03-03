@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,8 +21,6 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.app_bar);
         setSupportActionBar(toolbar);
 
-        MenuItem item = (MenuItem) findViewById(R.id.check_for_updates);
-
     }
 
 
@@ -34,16 +33,10 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        switch (item.getItemId()) {
-        case 0:  break;
-            default: System.out.println("Test is the default action");break;
-        }
+        TextView textView = (TextView) findViewById(R.id.textView);
+        String str = (String) item.getTitle();
+        textView.setText("Last clicked item was: "+str.toString());
         return super.onOptionsItemSelected(item);
     }
-
-    public void action_settings_click() {
-
-    }
-
 
 }
