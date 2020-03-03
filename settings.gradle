@@ -1,0 +1,2 @@
+rootProject.name='WTest006'
+include ':app'

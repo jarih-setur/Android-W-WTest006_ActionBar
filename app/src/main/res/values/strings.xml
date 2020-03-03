@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">WTest006_ActionBar</string>
+    <string name="settings_name">Settings</string>
+    <string name="check_for_updates">Check for updates...</string>
+</resources>

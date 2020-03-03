@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_settings"
+        android:onClick="action_settings_click"
+        android:title="@string/settings_name"
+        app:showAsAction="never"></item>
+    <item
+        android:id="@+id/check_for_updates"
+        android:title="@string/check_for_updates"
+        app:showAsAction="never">
+    </item>
+
+</menu>
