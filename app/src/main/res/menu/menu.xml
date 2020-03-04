@@ -2,13 +2,19 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/action_settings"
-        android:numericShortcut="onOptionsItemSelected"
+        android:id="@+id/miHelp"
+        android:title="@string/help_name"
+        app:showAsAction="never"></item>
+    <!--android:numericShortcut="onOptionsItemSelected"-->
+    <item
+        android:id="@+id/miSettings"
         android:title="@string/settings_name"
         app:showAsAction="never"></item>
+
     <item
-        android:id="@+id/check_for_updates"
-        android:title="@string/check_for_updates"
-        app:showAsAction="never"></item>
+        android:id="@+id/miUpdates"
+        android:title="@string/update_name"
+        app:showAsAction="never">
+    </item>
 
 </menu>
