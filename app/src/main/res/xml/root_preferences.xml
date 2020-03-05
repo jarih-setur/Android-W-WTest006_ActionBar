@@ -1,34 +1,56 @@
-<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <PreferenceCategory app:title="@string/messages_header">
+    <PreferenceCategory
+        app:title="@string/messages_header">
 
         <EditTextPreference
             app:key="signature"
             app:title="@string/signature_title"
-            app:useSimpleSummaryProvider="true" />
+            app:useSimpleSummaryProvider="true"/>
 
         <ListPreference
-            app:defaultValue="reply"
-            app:entries="@array/reply_entries"
-            app:entryValues="@array/reply_values"
             app:key="reply"
             app:title="@string/reply_title"
-            app:useSimpleSummaryProvider="true" />
+            app:entries="@array/reply_entries"
+            app:entryValues="@array/reply_values"
+            app:defaultValue="reply"
+            app:useSimpleSummaryProvider="true"/>
 
     </PreferenceCategory>
 
-    <PreferenceCategory app:title="@string/sync_header">
+    <PreferenceCategory
+        app:title="@string/sync_header">
 
         <SwitchPreferenceCompat
-            app:key="sync"
-            app:title="@string/sync_title" />
+            app:key="sync_email"
+            app:title="@string/sync_title"/>
 
         <SwitchPreferenceCompat
-            app:dependency="sync"
-            app:key="attachment"
-            app:summaryOff="@string/attachment_summary_off"
+            app:key="email_attachment"
+            app:title="@string/attachment_title"
             app:summaryOn="@string/attachment_summary_on"
-            app:title="@string/attachment_title" />
+            app:summaryOff="@string/attachment_summary_off"
+            app:dependency="sync_email"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:title="Sync Connectiontype">
+        <CheckBoxPreference
+            app:key="pref_sync"
+            app:title="Sync"
+            app:summary="Sync connection"
+            app:defaultValue="true"/>
+        <ListPreference
+            app:dependency="pref_sync"
+            app:key="pref_sync_connection_type"
+            app:title="Connection type"
+            app:entries="@array/pref_syncConnectionType_entries"
+            app:entryValues="@array/pref_syncConnectionType_values"
+            app:defaultValue="WiFi"
+            />
+        <!--android:summary="@string/pref_syncConnectionType_summary"-->
 
     </PreferenceCategory>
 

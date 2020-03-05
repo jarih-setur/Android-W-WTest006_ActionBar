@@ -9,4 +9,18 @@
         <item>reply</item>
         <item>reply_all</item>
     </string-array>
+
+    <string-array name="pref_syncConnectionType_entries">
+        <item>WiFi data</item>
+        <item>Mobile data</item>
+        <item>WiFi/Mobile data</item>
+    </string-array>
+
+    <string-array name="pref_syncConnectionType_values">
+        <item>WiFi</item>
+        <item>Mobile</item>
+        <item>WiFi_Mobile</item>
+    </string-array>
+
+
 </resources>
