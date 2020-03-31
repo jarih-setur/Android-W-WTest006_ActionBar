@@ -48,7 +48,9 @@
             app:title="Connection type"
             app:entries="@array/pref_syncConnectionType_entries"
             app:entryValues="@array/pref_syncConnectionType_values"
-            app:defaultValue="WiFi"
+            app:defaultValue="wifi"
+            android:summary="@string/pref_syncConnectionType_summary"
+            app:useSimpleSummaryProvider="true"
             />
         <!--android:summary="@string/pref_syncConnectionType_summary"-->
 

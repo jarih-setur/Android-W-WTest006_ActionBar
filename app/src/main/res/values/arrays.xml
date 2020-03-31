@@ -13,13 +13,13 @@
     <string-array name="pref_syncConnectionType_entries">
         <item>WiFi data</item>
         <item>Mobile data</item>
-        <item>WiFi/Mobile data</item>
+        <item>WiFi or Mobile data</item>
     </string-array>
 
     <string-array name="pref_syncConnectionType_values">
-        <item>WiFi</item>
-        <item>Mobile</item>
-        <item>WiFi_Mobile</item>
+        <item>wifi</item>
+        <item>mobile</item>
+        <item>wifimobile</item>
     </string-array>
 
 
